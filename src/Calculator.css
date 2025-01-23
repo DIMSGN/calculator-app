@@ -1,5 +1,5 @@
 .calculator {
-  width: 450px;
+  width: 450px; /* Updated width */
   margin: 50px auto;
   padding: 10px;
   border: 2px solid #ddd;
@@ -24,18 +24,18 @@
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 8px;
 }
 
 button {
-  padding: 15px;
+  width: 100%; /* Ensure buttons take full width of their grid cell */
+  height:50px; /* Set a fixed height for all buttons */
   font-size: 1.2rem;
   background: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
 button:hover {
