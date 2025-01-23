@@ -1,50 +1,59 @@
 .calculator {
-    width: 300px;
-    margin: 50px auto;
-    padding: 10px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .display {
-    width: 100%;
-    height: 50px;
-    background: #e0e0e0;
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 1.5rem;
-    text-align: right;
-    border-radius: 5px;
-  }
-  
-  .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-  }
-  
-  button {
-    padding: 15px;
-    font-size: 1.2rem;
-    background: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  button:hover {
-    background: #45a049;
-  }
-  
-  button:nth-child(17) {
-    background: #e74c3c;
-  }
-  
-  button:nth-child(17):hover {
-    background: #c0392b;
-  }
-  
+  width: 450px;
+  margin: 50px auto;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  width: 95%; /* Updated width */
+  height: 50px;
+  background: #e0e0e0;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1.5rem;
+  text-align: right;
+  border-radius: 5px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 1.2rem;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+button:nth-child(17) {
+  background: #e74c3c;
+}
+
+button:nth-child(17):hover {
+  background: #c0392b;
+}
+
+button.mode {
+  background: #3498db;
+}
+
+button.mode:hover {
+  background: #2980b9;
+}
